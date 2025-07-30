@@ -9,14 +9,15 @@
   z-index: -1;
 }
 
-/* Video YouTube en fullscreen */
-.video-container iframe {
+/* Video en fullscreen */
+.video-container video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120%;
-  height: 120%;
+  min-width: 100%;
+  min-height: 100%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
   pointer-events: none; /* Evita clics en el video */
 }
 
@@ -33,35 +34,6 @@
 }
 
 /* Contenido encima */
-
-
-header {
-  text-align: center;
-  font-size: 30px;
-}
-
-main, html {
-  margin: 0;
-  padding: 0;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*background-color: #0C356A;*/
-}
-
-.button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 24px;
-  border: none;
-  background-color: #d8c93f;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-
-
 .content {
   position: absolute;
   top: 50%;
@@ -73,15 +45,15 @@ main, html {
   max-width: 800px;
   padding: 200px;
 
-  /* Fondo negro con transparencia (editable en VS Code) */
-  background: #181400cc;
+  /* Fondo negro con transparencia */
+  background: #000000cc;
 
   /* Estilo extra */
   border-radius: 15px;                   
-  box-shadow: 0 4px 30px #58480099; /* sombra con transparencia */
+  box-shadow: 0 4px 30px #e6590899;
   
-  /* Texto */
-  color: rgb(255, 255, 255);
+   /* Texto */
+  color: rgb(207, 207, 206);
   text-align: center;
   font-size: 18px;
 }
