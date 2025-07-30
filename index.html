@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video de YouTube de fondo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Video de YouTube como fondo -->
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed?autoplay=1&mute=1&loop=1&playlist=sQ22pm-xvrE"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+    <div id="video_pattern"></div>
+  </div>
+
+  <!-- Contenido sobre el video -->
+  <div class="content">
+    <header>
+        <h1>Mi Título Sobre el Video</h1>
+    </header>  
+    <!--<h1></h1>-->
+    <main class="container">
+        <button onclick="mostarMensajeEnLaConsola()" class="button">Consola</button>
+        <button onclick="mostrarAlerta1()" class="button">Alerta</button>
+        <button onclick="mostrarAlerta2()" class="button">Prompt</button>
+        <button onclick="sumaDosNumeros()" class="button">Suma</button>
+    </main>
+    <script src="app.js"></script>
+    <p>By Raúl Trueba Lógica de progrmación 2 ONEG9-2025</p>
+  </div>
+
+  
+</body>
+</html>
